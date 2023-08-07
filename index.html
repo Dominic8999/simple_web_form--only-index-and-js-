@@ -10,9 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Bootstrap-->
-    <title>Simple Web Survey</title>
+    <title>Ice cream Survey</title>
 </head>
-<body style="background-color: black;color: azure;">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #dfdfe2;">
             <div class="container-fluid"> <!-- Change container to container-fluid -->
@@ -48,14 +48,7 @@
                         <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-black"></div>
                         <hr class="d-lg-none my-2 text-black-50">
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="bi bi-circle-half"> Choose theme</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" onclick="light()">Light theme</a></li>
-                            <li><a class="dropdown-item" onclick="dark()">Dark theme</a></li>
-                        </ul>
+                    <li class="nav-item col-4 col-lg-auto"><button class="btn" style="background-color: #dfdfe2; color: black;" id="toggleButton" onclick="toggleTheme()">Change Theme</button></li>
                     <!-- Rest of the navbar content remains the same -->
                 </ul>
               </div>
@@ -63,25 +56,48 @@
           </nav>
     </header>
     <main>
-      <h1 class="mt-5" style="text-align: center;">Simple Web Survey</h1>
-      <table class="table table-dark table-striped">
+      <h1 class="mt-5" style="text-align: center;">Ice Cream survey</h1>
+      <table class="table table-striped">
         <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">first</th>
-            <th scope="col">second</th>
-            <th scope="col">third</th>
-          </tr>
+          <th scope="col">Year</th>
+          <th scope="col">Vanilla (units sold)</th>
+          <th scope="col">Chocolate (units sold)</th>
+          <th scope="col">Strawberry (units sold)</th>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1
-            <td>me</td>
-            <td>me</td>
-            </th>
+            <th scope="row">2019</th>
+            <td>500</td>
+            <td>300</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <th scope="row">2020</th>
+            <td>550</td>
+            <td>320</td>
+            <td>220</td>
+          </tr>
+          <tr>
+            <th scope="row">2021</th>
+            <td>600</td>
+            <td>350</td>
+            <td>240</td>
+          </tr>
+          <tr>
+            <th scope="row">2022</th>
+            <td>380</td>
+            <td>440</td>
+            <td>226</td>
+          </tr>
+          <tr>
+            <th scope="row">2023</th>
+            <td>280</td>
+            <td>800</td>
+            <td>560S</td>
           </tr>
         </tbody>
       </table>
+      <caption><i style="font-size: small;">* Used imaginary numbers</i></caption>
     </main>
     <footer>
       <address><i>Me 2023</i></address>

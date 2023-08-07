@@ -1,6 +1,4 @@
-const toggleButton = document.getElementById("toggleButton");
-
-toggleButton.addEventListener("click", function() {
+function toggleTheme() {
     const body = document.body;
 
     if (body.style.backgroundColor === "black") {
@@ -10,4 +8,4 @@ toggleButton.addEventListener("click", function() {
         body.style.backgroundColor = "black";
         body.style.color = "white";
     }
-});
+}
