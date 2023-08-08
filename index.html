@@ -58,7 +58,7 @@
     <main>
       <h1 class="mt-5" style="text-align: center;">Ice Cream survey</h1>
       <figure class="justify-content-center d-block text-center">
-        <img class="figure-fluid img-fluid rounded mx-auto" src="ice_cream.png" alt="ice cream picture"/>
+        <img class="figure-fluid img-fluide rounded mx-auto" src="ice_cream.png" alt="ice cream picture"/>
         <figcaption class="figure-caption mx-auto" style="color: gray;"><i>Photo taken from [insert location].</i></figcaption>
       </figure>    
       <table class="table table-striped">
@@ -101,10 +101,72 @@
           </tr>
         </tbody>
       </table>
-      <caption><i style="font-size: small;">* Used imaginary numbers</i></caption>
+      <p><i style="font-size: small;">* Used imaginary numbers</i></p>
+
+
+        <!-- The survey here -->
+      <figure class="d-flex justify-content-center align-items-center">
+        <div class="d-block">
+          <!-- First part -->
+          <div class="m-5">
+            <form>
+              <span>
+                <p>Name</p>
+                <input type="text" class="form-control" placeholder="Your Name"/>
+              </span>
+            </form>
+          </div>
+          <!-- Second part -->
+          <div class="m-5">
+            <form>
+              <h3>Do you like ice cream?</h3>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="first" name="ice-cream" required>
+                <label class="form-check-label" for="first">Yes, I do!</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="second" name="ice-cream" required>
+                <label class="form-check-label" for="second">Yes, it's delicious!</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="third" name="ice-cream" required>
+                <label class="form-check-label" for="third">Yes, I love it!</label>
+              </div>
+            </form>
+          </div>
+          <!-- Third part -->
+          <div class="m-5">
+            <form>
+              <h3>What flavor do you prefer?</h3>
+              <span class="form-check">
+                <input class="form-check-input" id="first_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" for="first_sth">Chocolate!!!</label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" id="second_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" id="second_sth">Vanilla</label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" id="third_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" for="third_sth">Strawberry!</label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" id="fourth_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" for="fourth_sth">Other one -_-</label>
+              </span>
+            </form>
+          </div>
+          <!-- Fourth part -->
+          <div class="m-5">
+            <h3>What flavor would you like to add, and why?</h3>
+            <textarea class="form-control" cols="35" rows="6" placeholder="Write your answer here"></textarea>
+          </div>
+        </div>
+      </figure>
+    
     </main>
     <footer>
-      <address><i>Me 2023</i></address>
+      <address><i><span class="viewport">Me </span>2023</i></address>
     </footer>
 </body>
 </html>
