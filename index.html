@@ -182,17 +182,12 @@
           </div>
         </div>
       </figure>
-      <!--Submit button below-->
-      <div class="justify-content-center d-block text-center">
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-          echo "<p class='text-success'>Form submitted successfully!</p>";
-        }
-      ?>
-        <form action="process_form.php" method="POST"> <!-- Replace with the actual action and method -->
-          <button class="btn btn-success btn-lrg" style='transform: scale(1.5);' type="submit">Submit</button>
-        </form>
-      </div>
+      <!-- Submit button below -->
+    <div class="justify-content-center d-block text-center">
+      <form method="post">
+        <button class="btn btn-success btn-lrg" style='transform: scale(1.5);' type="submit">Submit</button>
+      </form>
+    </div>
     </main>
     <footer>
       <address><i><span class="viewport">Me </span>2023</i></address>
