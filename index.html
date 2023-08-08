@@ -101,23 +101,42 @@
           </tr>
         </tbody>
       </table>
-      <p><i style="font-size: small;">* Used imaginary numbers</i></p>
-
-
+      <p>
+        <i style="font-size: small;">
+          * Used imaginary numbers
+        </i>
+      </p>
         <!-- The survey here -->
       <figure class="d-flex justify-content-center align-items-center">
         <div class="d-block">
           <!-- First part -->
-          <div class="m-5">
+          <div class="m-4">
             <form>
-              <span>
-                <p>Name</p>
-                <input type="text" class="form-control" placeholder="Your Name"/>
-              </span>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Enter your Name">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Number of eaten ice cream (Optional)</label>
+                <input class="form-control" id="number" type="number" max="10" min="1" placeholder="Number of ice creams">
+              </div>
+              <div class="mb-3">
+                <span>What favor would you recommend to your friends?</span>
+                <select class="form-select">
+                  <option value="0">Select an option</option>
+                  <option value="1">Chocolate</option>
+                  <option value="2">Vanilla</option>
+                  <option value="3">Strawberry</option>
+                </select>
+              </div>
             </form>
           </div>
           <!-- Second part -->
-          <div class="m-5">
+          <div class="m-4">
             <form>
               <h3>Do you like ice cream?</h3>
               <div class="form-check">
@@ -135,7 +154,7 @@
             </form>
           </div>
           <!-- Third part -->
-          <div class="m-5">
+          <div class="m-4">
             <form>
               <h3>What flavor do you prefer?</h3>
               <span class="form-check">
@@ -157,13 +176,23 @@
             </form>
           </div>
           <!-- Fourth part -->
-          <div class="m-5">
+          <div class="m-4">
             <h3>What flavor would you like to add, and why?</h3>
             <textarea class="form-control" cols="35" rows="6" placeholder="Write your answer here"></textarea>
           </div>
         </div>
       </figure>
-    
+      <!--Submit button below-->
+      <div class="justify-content-center d-block text-center">
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+          echo "<p class='text-success'>Form submitted successfully!</p>";
+        }
+      ?>
+        <form action="process_form.php" method="POST"> <!-- Replace with the actual action and method -->
+          <button class="btn btn-success btn-lrg" style='transform: scale(1.5);' type="submit">Submit</button>
+        </form>
+      </div>
     </main>
     <footer>
       <address><i><span class="viewport">Me </span>2023</i></address>
