@@ -1,4 +1,4 @@
-# simple_web_form -(only-index-and-js)
+# simple_web_form -(only index-and index.js. There's NO config files like PHP or Node. It's only styling document-page)
 
 It's a simple web form which was made using boostrap.
 
