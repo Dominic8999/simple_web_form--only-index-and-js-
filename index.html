@@ -111,26 +111,26 @@
         <div class="d-block">
           <!-- First part -->
           <div class="m-4">
-            <form>
+            <form method="post">
               <div class="mb-3">
                 <label class="form-label">Name</label>
-                <input type="text" class="form-control" placeholder="Enter your Name" required>
+                <input type="text" class="form-control" placeholder="Enter your Name" required name="FirstName">
               </div>
               <div class="mb-3">
                 <label class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="Enter your email" required>
+                <input type="email" class="form-control" placeholder="Enter your email" required name="Email">
               </div>
               <div class="mb-3">
                 <label class="form-label">Number of eaten ice cream (Optional)</label>
-                <input class="form-control" id="number" type="number" max="10" min="1" placeholder="Number of ice creams">
+                <input class="form-control" id="number" type="number" max="10" min="1" placeholder="Number of ice creams" name="EatenIceCream">
               </div>
               <div class="mb-3">
-                <span>What favor would you recommend to your friends?</span>
+                <span>What flavour would you recommend to your friends?</span>
                 <select class="form-select">
-                  <option value="0">Select an option</option>
-                  <option value="1">Chocolate</option>
-                  <option value="2">Vanilla</option>
-                  <option value="3">Strawberry</option>
+                  <option value="null" name="flavour">Select an option</option>
+                  <option value="Chocolate" name="flavour">Chocolate</option>
+                  <option value="Vanilla" name="flavour">Vanilla</option>
+                  <option value="Strawberry" name="flavour">Strawberry</option>
                 </select>
               </div>
             </form>
@@ -140,15 +140,15 @@
             <form>
               <h3>Do you like ice cream?</h3>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="first" name="ice-cream" required>
+                <input class="form-check-input" type="radio" id="first" value="yes_i_do" name="ice-cream" required>
                 <label class="form-check-label" for="first">Yes, I do!</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="second" name="ice-cream" required>
+                <input class="form-check-input" type="radio" id="second" value="even_more" name="ice-cream" required>
                 <label class="form-check-label" for="second">Yes, it's delicious!</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="third" name="ice-cream" required>
+                <input class="form-check-input" type="radio" id="third" value="love_it" name="ice-cream" required>
                 <label class="form-check-label" for="third">Yes, I love it!</label>
               </div>
             </form>
@@ -158,19 +158,19 @@
             <form>
               <h3>What flavor do you prefer?</h3>
               <span class="form-check">
-                <input class="form-check-input" id="first_sth" type="checkbox" name="flavor"/>
+                <input class="form-check-input" id="first_sth" type="checkbox" value="c" name="your_flavour"/>
                 <label class="form-check-label" for="first_sth">Chocolate!!!</label>
               </span>
               <span class="form-check">
-                <input class="form-check-input" id="second_sth" type="checkbox" name="flavor"/>
+                <input class="form-check-input" id="second_sth" type="checkbox" value="v" name="your_flavour"/>
                 <label class="form-check-label" id="second_sth">Vanilla</label>
               </span>
               <span class="form-check">
-                <input class="form-check-input" id="third_sth" type="checkbox" name="flavor"/>
+                <input class="form-check-input" id="third_sth" type="checkbox" value="s" name="your_flavour"/>
                 <label class="form-check-label" for="third_sth">Strawberry!</label>
               </span>
               <span class="form-check">
-                <input class="form-check-input" id="fourth_sth" type="checkbox" name="flavor"/>
+                <input class="form-check-input" id="fourth_sth" type="checkbox" value="o" name="your_flavour"/>
                 <label class="form-check-label" for="fourth_sth">Other one -_-</label>
               </span>
             </form>
@@ -178,7 +178,7 @@
           <!-- Fourth part -->
           <div class="m-4">
             <h3>What flavor would you like to add, and why?</h3>
-            <textarea class="form-control" cols="35" rows="6" placeholder="Write your answer here"></textarea>
+            <textarea class="form-control" max="100" name="opinion" cols="35" rows="6" placeholder="Write your answer here"></textarea>
           </div>
         </div>
       </figure>
