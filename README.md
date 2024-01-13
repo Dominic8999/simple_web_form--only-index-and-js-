@@ -1,6 +1,6 @@
 # simple_web_form -(only index-and index.js. There's NO config files like PHP or Node. It's only styling document-page)
 
-It's a simple web form which was made using boostrap.
+It's a simple web form that was made using Bootstrap.
 
 light theme:
 ![image](https://github.com/Dominic8999/simple_web_form--only-index-and-js-/assets/140336313/71613c0e-9bb3-44e6-b307-6624886ebc5a)
