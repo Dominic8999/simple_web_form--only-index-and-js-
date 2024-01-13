@@ -2,7 +2,7 @@
     $firstName = $_POST['FirstName'];
     $EatenIceCream = $_POST['EatenIceCream'];
     $email = $_POST['Email'];
-    $flavour = $_POST['flavour'];
+    $flavour_rec = $_POST['flavour_rec'];
     $ice_cream = $_POST['ice_cream'];
     $yourflavour = $_POST['yourflavour'];
     $opinion = $_POST['opinion']
@@ -12,9 +12,9 @@
     if($conn->connect_error) {
         die('Connection Failed : ' $conn->connect_error);
     }else{
-        $stmt $conn->prepare("insert into registration(firstName, EatenIceCream, flavour, email, ice_cream, yourflavour, opinion)
+        $stmt $conn->prepare("insert into registration(firstName, EatenIceCream, flavour_rec, email, ice_cream, yourflavour, opinion)
         values(?, ?, ?, ?, ?, ?)");
-        $stmt->bind param("sisssssb", $firstName, $EatenIceCream, $flavour, $email, $ice_cream, $yourflavour, $opinion);
+        $stmt->bind param("sisssssb", $firstName, $EatenIceCream, $flavour_rec, $email, $ice_cream, $yourflavour, $opinion);
         $stmt->execute();
         echo "registration Successfully...";
         $stmt->close();
