@@ -1,0 +1,176 @@
+bar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <!-- Rest of the navbar content remains the same -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link py-2 px-0 px-lg-2" aria-current="page" href="#"><span class="bi bi-github"></span></a>
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto">
+                      <a class="nav-link py-2 px-0 px-lg-2" aria-current="page" href="#"><span class="bi bi-youtube"></span></a>
+                  </li>
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link py-2 px-0 px-lg-2" aria-current="page" href="#"><span class="bi bi-twitter"></span></a>
+                    </li>
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-black"></div>
+                        <hr class="d-lg-none my-2 text-black-50">
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto"><button class="btn" style="background-color: #dfdfe2; color: black;" id="toggleButton" onclick="toggleTheme()">Change Theme</button></li>
+                    <!-- Rest of the navbar content remains the same -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <h1 class="mt-5" style="text-align: center;">Ice Cream survey</h1>
+      <figure class="justify-content-center d-block text-center">
+        <img class="figure-fluid img-fluide rounded mx-auto" src="ice_cream.png" alt="ice cream picture"/>
+        <figcaption class="figure-caption mx-auto" style="color: gray;"><i>Photo taken from [insert location].</i></figcaption>
+      </figure>    
+      <table class="table table-striped">
+        <thead>
+          <th scope="col">Year</th>
+          <th scope="col">Vanilla (units sold)</th>
+          <th scope="col">Chocolate (units sold)</th>
+          <th scope="col">Strawberry (units sold)</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">2019</th>
+            <td>500</td>
+            <td>300</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <th scope="row">2020</th>
+            <td>550</td>
+            <td>320</td>
+            <td>220</td>
+          </tr>
+          <tr>
+            <th scope="row">2021</th>
+            <td>600</td>
+            <td>350</td>
+            <td>240</td>
+          </tr>
+          <tr>
+            <th scope="row">2022</th>
+            <td>380</td>
+            <td>440</td>
+            <td>226</td>
+          </tr>
+          <tr>
+            <th scope="row">2023</th>
+            <td>280</td>
+            <td>800</td>
+            <td>560S</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <i style="font-size: small;">
+          * Used imaginary numbers
+        </i>
+      </p>
+        <!-- The survey here -->
+      <figure class="d-flex justify-content-center align-items-center">
+        <div class="d-block">
+          <!-- First part -->
+          <div class="m-4">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Enter your Name" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Number of eaten ice cream (Optional)</label>
+                <input class="form-control" id="number" type="number" max="10" min="1" placeholder="Number of ice creams">
+              </div>
+              <div class="mb-3">
+                <span>What favor would you recommend to your friends?</span>
+                <select class="form-select">
+                  <option value="0">Select an option</option>
+                  <option value="1">Chocolate</option>
+                  <option value="2">Vanilla</option>
+                  <option value="3">Strawberry</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <!-- Second part -->
+          <div class="m-4">
+            <form>
+              <h3>Do you like ice cream?</h3>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="first" name="ice-cream" required>
+                <label class="form-check-label" for="first">Yes, I do!</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="second" name="ice-cream" required>
+                <label class="form-check-label" for="second">Yes, it's delicious!</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="third" name="ice-cream" required>
+                <label class="form-check-label" for="third">Yes, I love it!</label>
+              </div>
+            </form>
+          </div>
+          <!-- Third part -->
+          <div class="m-4">
+            <form>
+              <h3>What flavor do you prefer?</h3>
+              <span class="form-check">
+                <input class="form-check-input" id="first_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" for="first_sth">Chocolate!!!</label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" id="second_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" id="second_sth">Vanilla</label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" id="third_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" for="third_sth">Strawberry!</label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" id="fourth_sth" type="checkbox" name="flavor"/>
+                <label class="form-check-label" for="fourth_sth">Other one -_-</label>
+              </span>
+            </form>
+          </div>
+          <!-- Fourth part -->
+          <div class="m-4">
+            <h3>What flavor would you like to add, and why?</h3>
+            <textarea class="form-control" cols="35" rows="6" placeholder="Write your answer here"></textarea>
+          </div>
+        </div>
+      </figure>
+      <!-- Submit button below -->
+    <div class="justify-content-center d-block text-center">
+      <form method="post">
+        <button class="btn btn-success btn-lrg" style='transform: scale(1.5);' type="submit">Submit</button>
+      </form>
+    </div>
+    </main>
+    <footer>
+      <address><i><span class="viewport">Me </span>2023</i></address>
+    </footer>
+</body>
+</html>

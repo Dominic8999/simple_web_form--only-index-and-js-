@@ -11,6 +11,7 @@ $opinion = $_POST['opinion'];
 $conn = new mysqli('localhost', 'root', '', 'my_simple_form');
 if ($conn->connect_error) {
     die('Connection Failed : ' . $conn->connect_error); // Corrected the concatenation operator
+    echo 'Something bad happened'
 } else {
     $stmt = $conn->prepare("INSERT INTO ice_cream (firstName, EatenIceCream, flavour_rec, email, ice_cream, yourflavour, opinion) VALUES (?, ?, ?, ?, ?, ?, ?)"); // Corrected the prepared statement query
     $stmt->bind_param("sisssss", $firstName, $EatenIceCream, $flavour_rec, $email, $ice_cream, $yourflavour, $opinion); // Removed the extra 'b' in the bind_param
